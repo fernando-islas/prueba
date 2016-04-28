@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+    <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
+
+    
+
+
+<link rel="stylesheet" href="pure-release-0.6.0/pure-min.css">
+
+
+
+<!--[if lte IE 8]>
+  
+    <link rel="stylesheet" href="pure-release-0.6.0/grids-responsive-old-ie-min.css">
+  
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  
+
+ 
+    <link rel="stylesheet" href="pure-release-0.6.0/grids-responsive-min.css">
+  
+    
+  
+<!--<![endif]-->
+
+<!--
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+-->
+
+<link rel="stylesheet" href="bootstrapcdn_font-awesome_4.0.3_css/font-awesome.css">
+
+
+
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie_diseno.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/marketing_diseno.css">
+    <!--<![endif]-->
+  
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+    
+
+ <!--  
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+  -->  
+    
+  
+    <!-- Start WOWSlider.com HEAD section -->
+ 
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+
+<!-- End WOWSlider.com HEAD section -->
+    
+    
+    
+    	<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="description" content="Responsive Image Gallery with jQuery" />
+        <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+        <!--
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+        -->
+		<noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+
+</head>
+<body onresize="window.parent.location = window.parent.location.href;">
+<!--
+"window.location.reload()">
+-->
+<!--
+window.location.href = location.href + "?" + Date.parse(new Date());
+-->
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="index.html"><i class="fa fa-home"></i>  </a>
+
+        <ul class="pure-menu-list">
+            <!--<li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Inicio</a></li>-->
+  
+  
+       
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover "><a href="" class="pure-menu-link ">Portafolio</a>
+            	<ul class="pure-menu-children">
+                	<li class="pure-menu-item"><a href="diseno.html" class="pure-menu-link">
+                    	<i class="fa fa-pencil-square-o fa-fw"></i>&nbsp; Diseño Gráfico</a></li>
+                    <li class="pure-menu-item"><a href="fotografia.html" class="pure-menu-link">
+                    	<i class="fa fa-camera-retro fa-fw"></i>&nbsp; Fotografía</a></li>
+                    <li class="pure-menu-item"><a href="web.html" class="pure-menu-link">
+                    	<i class="fa fa-th-large fa-fw"></i>&nbsp; Diseño Web</a></li>
+                    <li class="pure-menu-item"><a href="modelado.html" class="pure-menu-link">
+                    	<i class="fa fa-cubes fa-fw"></i>&nbsp; Modelado y Animación</a></li>              
+                        
+                    <li class="pure-menu-item pure-menu-vertical pure-menu-separatorv"></li>
+                    
+                    <li class="pure-menu-item"><a href="galeria.html" class="pure-menu-link">
+                    	<i class="fa fa-desktop fa-fw"></i>&nbsp; Galería</a></li>
+
+<!-- 
+<!--
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">
+                    	<i class="fa fa-video-camera fa-fw"></i>&nbsp; Video y Post-producción</a></li>
+
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">
+                    	<i class="fa fa-gamepad fa-fw"></i></i>&nbsp; Desarrollo de video juegos</a></li>
+             
+-->
+
+				 </ul>
+            </li>
+<!--
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Galería</a></li>
+-->
+            <li class="pure-menu-item"><a href="contacto.html" class="pure-menu-link">Contacto</a></li>
+        </ul>
+
+    </div>
+</div>
+
+
+<div class="content-wrapper">
+
+    <div class="l-content ">
+        <h2 class="content-head">Diseño Gráfico </h2>
+        <div class=" pure-g">
+        <div class="l-box pure-u-1 pure-u-md-1-1 pure-u-lg-1-1">
+            <p>Mensajes específicos utilizando distintas técnicas. 
+            </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--<div class="content ">--> 
+	<div class="l-content ">
+	    
+    	
+        <div class=" pure-g">
+             
+            <div class="l-box pure-u-1 pure-u-md-1-1 pure-u-lg-1-1">
+            <!--<div class="pure-u-1 pure-u-md-1-3">-->  
+            	<br> 
+             	<h3 class="content-subhead">
+                   Ilustracion y Efectos
+                </h3>
+        		<p> Logo, Retoque, Poster, Cartel, Desintegración, Jill, Pintura, Acuarela, Oleo, <br>
+                </p>
+                  
+                  
+                  
+                <div class="content">
+    <!--
+                    <h1>Responsive Image Gallery <span>A jQuery image gallery with a thumbnail carousel</span></h1>
+    -->
+                    <div id="rg-gallery" class="rg-gallery">
+                        <div class="rg-thumbs">
+                            <!-- Elastislide Carousel Thumbnail Viewer -->
+                            <div class="es-carousel-wrapper">
+                                <div class="es-nav">
+                                    <span class="es-nav-prev">Previous</span>
+                                    <span class="es-nav-next">Next</span>
+                                </div>
+                                <div class="es-carousel">
+                                    <ul>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Cartel_trabajador.jpg" data-large="img/Cartel_trabajador.jpg" alt="Cartel trabajador" data-description="Cartel_trabajador.jpg" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Logo_boxer.jpg" data-large="img/Logo_boxer.jpg" alt="Logo boxer" data-description="Logo boxer.jpg" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Anuncio_gatorade.jpg" data-large="img/Anuncio_gatorade.jpg" alt="Anuncio gatorade" data-description="Anuncio gatorade.jpg" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Grabado_estampado.jpg" data-large="img/Grabado_estampado.jpg" alt="Grabado estampado" data-description="Grabado estampado.jpg" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Cartel_vampira.jpg" data-large="img/Cartel_vampira.jpg" alt="Cartel vampira" data-description="Cartel vampira" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Retoque.jpg" data-large="img/Retoque.jpg" alt="Retoque" data-description="Retoque" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Dummies_empaque.jpg" data-large="img/Dummies_empaque.jpg" alt="Dummies empaque" data-description="Dummies empaque" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Salida_impresion_Ilustrator.jpg" data-large="img/Salida_impresion_Ilustrator.jpg" alt="Salida impresion Ilustrator" data-description="Salida impresion Ilustrator" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Salida_impresion_InDesign.jpg" data-large="img/Salida_impresion_InDesign.jpg" alt="Salida impresion InDesign" data-description="Salida impresion InDesign" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Cartel_fumar.jpg" data-large="img/Cartel_fumar.jpg" alt="Cartel fumar" data-description="Cartel fumar" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Folleto_fumar.jpg" data-large="img/Folleto_fumar.jpg" alt="Folleto fumar" data-description="Folleto fumar" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Poster_fumar.jpg" data-large="img/Poster_fumar.jpg" alt="Poster fumar" data-description="Poster fumar" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Poster_cine.jpg" data-large="img/Poster_cine.jpg" alt="Poster cine" data-description="Poster cine" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Efecto_acuarela.jpg" data-large="img/Efecto_acuarela.jpg" alt="Efecto acuarela" data-description="Efecto acuarela" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Anuncio_tequila.jpg" data-large="img/Anuncio_tequila.jpg" alt="Anuncio tequila" data-description="Anuncio tequila" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Anuncio_estacion.jpg" data-large="img/Anuncio_estacion.jpg" alt="Anuncio estacion" data-description="Anuncio estacion" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Anuncio_estacion2.jpg" data-large="img/Anuncio_estacion2.jpg" alt="Anuncio estacion2" data-description="Anuncio estacion2" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Lluvia_neblina.jpg" data-large="img/Lluvia_neblina.jpg" alt="Lluvia neblina" data-description="Lluvia neblina" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Cartel_texto.jpg" data-large="img/Cartel_texto.jpg" alt="Cartel texto" data-description="Cartel texto" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Duplicar_objetos.jpg" data-large="img/Duplicar_objetos.jpg" alt="Duplicar objetos" data-description="Duplicar objetos" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Anuncio_moda.jpg" data-large="img/Anuncio_moda.jpg" alt="Anuncio moda" data-description="Anuncio moda" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Efecto_haz_de_luz.jpg" data-large="img/Efecto_haz_de_luz.jpg" alt="Efecto haz de luz" data-description="Efecto haz de luz" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Cartel_videojuego.jpg" data-large="img/Cartel_videojuego.jpg" alt="Cartel videojuego" data-description="Cartel videojuego" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Cartel_liquido.jpg" data-large="img/Cartel_liquido.jpg" alt="Cartel liquido" data-description="Cartel liquido" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Coreccion_color_detalle1.jpg" data-large="img/Coreccion_color_detalle1.jpg" alt="Coreccion color detalle1" data-description="Coreccion color detalle1" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Coreccion_color_detalle2.jpg" data-large="img/Coreccion_color_detalle2.jpg" alt="Coreccion color detalle2" data-description="Coreccion color detalle2" /></a></li>
+                                    
+                                   <li><a href="#"><img src="img/thumbs/Coreccion_color_detalle3.jpg" data-large="img/Coreccion_color_detalle3.jpg" alt="Coreccion color detalle3" data-description="Coreccion color detalle3" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Pintura_digital.jpg" data-large="img/Pintura_digital.jpg" alt="Pintura digital" data-description="Pintura digital" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Tomate_ilustrator.jpg" data-large="img/Tomate_ilustrator.jpg" alt="Tomate ilustrator" data-description="Tomate ilustrator" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Cerezas_ilustrator.jpg" data-large="img/Cerezas_ilustrator.jpg" alt="Cerezas ilustrator" data-description="Cerezas ilustrator" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Portada_CD.jpg" data-large="img/Portada_CD.jpg" alt="Portada CD" data-description="Portada CD" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Caricatura_cartel.jpg" data-large="img/Caricatura_cartel.jpg" alt="Caricatura cartel" data-description="Caricatura cartel" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Dibujo_clasico.jpg" data-large="img/Dibujo_clasico.jpg" alt="Dibujo clasico" data-description="Dibujo clasico" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Oso_textura.jpg" data-large="img/Oso_textura.jpg" alt="Oso textura" data-description="Oso textura" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Tomates_oleo.jpg" data-large="img/Tomates_oleo.jpg" alt="Tomates oleo" data-description="Tomates oleo" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Caricatura_real.jpg" data-large="img/Caricatura_real.jpg" alt="Caricatura real" data-description="Caricatura real" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Efecto_pintura.jpg" data-large="img/Efecto_pintura.jpg" alt="Efecto pintura" data-description="Efecto pintura" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Efecto_tinta.jpg" data-large="img/Efecto_tinta.jpg" alt="Efecto tinta" data-description="Efecto tinta" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Pintura_hortalizas.jpg" data-large="img/Pintura_hortalizas.jpg" alt="Pintura hortalizas" data-description="Pintura hortalizas" /></a></li>
+                                    
+                                    <li><a href="#"><img src="img/thumbs/Caricatura_Harry_Potter.jpg" data-large="img/Caricatura_Harry_Potter.jpg" alt="Caricatura Harry Potter" data-description="Caricatura Harry Potter" /></a></li>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Elastislide Carousel Thumbnail Viewer -->
+                            
+                           <!-- DISEÑO Editorial-->
+                        </div><!-- rg-thumbs -->
+                    </div><!-- rg-gallery -->
+				
+			<!--</div><!-- content -->
+		<!--</div><!-- container -->
+		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+      		</div>
+      
+
+          	<!--<div class="l-box pure-u-1 pure-u-md-1-1 pure-u-lg-1-1">-->
+            <!--<div class="pure-u-1 pure-u-md-1-3">-->   
+				<!--<br>
+             	<h3 class="content-subhead">
+                   Ilustración
+                </h3>
+            
+        		<p> Se incluyen: Retoque, Poster, Cartel, Desintegración, Jill, Pintura, Low Poly<br>
+                </p>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                
+                 
+      		</div>-->
+		
+        </div>
+    </div>
+
+      
+
+	<div class="footer l-box is-center">
+        Creado por Fernando Islas Garcia.<br>
+        <i class="fa fa-copyright"></i> 2015
+    </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
